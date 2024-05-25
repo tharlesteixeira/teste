@@ -1,63 +1,80 @@
 @charset "UTF-8";
 
-*{
-    padding: 0;
-    margin:0;
-}
-
 body{
     font-family: Arial, Helvetica, sans-serif;
-    height: 100vh;
-    margin: auto;
+    margin: 0;
 }
+
+/*---------topo---------*/
 
 h1{
     font-size: 1.3em;
+    margin: 0;
 }
 
 .topo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background: black;
     color: white;
+    padding: 10px 20px;
     height: 50px;
 }
 
-.topo > a{
+.topo  img{
+    width: 30px;
+    margin-right: 10px;
+}
+
+.topo h1{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin: 0;
+}
+
+.topo h1 a{
+    text-decoration: none;
     color: white;
 }
 
-.topo > img{
-    position: absolute;
-    top: 12px;
-    width: 30px;
+.topo h1 a:hover{
+    text-decoration: underline;
 }
 
-.topo > #sub{
-    position: absolute;
-    top: 15px;
-    margin-left: 63%;
+.login-registrar{
+    display: flex;
+    gap: 10px;
 }
 
-a > .sub{
+.login-registrar a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.login-registrar .sub, .login-registrar .sin{
     background: rgb(39, 39, 39);
     color: whitesmoke;
-    height: 25px;
-    width: 130px;
     border-radius: 5px;
     border: 1px solid white;
-}
-
-.topo > #sin{
-    position: absolute;
-    top: 15px;
-    margin-left: 84%;
-}
-
-a > .sin{
-    background: rgb(0, 81, 255);
-    color: whitesmoke;
+    padding: 0 10px;
+    cursor: pointer;
     height: 25px;
-    width: 80px;
-    border-radius: 5px;
+}
+
+.login-registrar .sin{
+    background: rgb(0, 81, 255);
+    border: none;
+}
+
+.login-registrar .sub:hover{
+    background: rgba(39, 39, 39, 0.61);
+}
+
+.login-registrar .sin:hover{
+    background: rgba(0, 81, 255, 0.61);
 }
 
 .topo > h1{
@@ -65,6 +82,10 @@ a > .sin{
     top: 15px;
     margin-left: 30px;
 }
+
+
+/*-------topo-baixo-----*/
+
 
 .topo-baixo{
     background-color: #faabf1;
@@ -76,6 +97,7 @@ a > .sin{
 
 .topo-baixo > h1{
     padding-top: 50px;
+    margin: 0;
 }
 .topo-baixo input{
     width: 400px;
@@ -84,20 +106,78 @@ a > .sin{
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.63);
     border: none;
     padding: 10px;
-
+    margin-top: 20px;
 }
+
+/*----------conteudo---------*/
 
 main{
     width: 630px;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main .centro{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 main img{
     width: 70px;
-    float: left;
-    padding: 10px;
-    margin-left: 10px;
+    flex-shrink: 0;
 }
+
+main .centro > img{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
 .centro p{
-    padding: 10px;
+    margin: 0 0 10px 0;
+}
+
+.centro a{
+    text-decoration: none;
+    color: rgb(0, 81, 255);
+    margin-bottom: 20px;
+}
+
+.centro a:hover{
+    text-decoration: underline;
+}
+
+/*-------rodapé------*/
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+/*-----rsponsividade----*/
+
+@media (min-width: 768px) {
+    
 }
