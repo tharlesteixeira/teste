@@ -20,6 +20,8 @@ header {
 header h4{
     display: flex;
     align-items: center;
+    font-size: 25px;
+    margin: 0 0 0 10px;
 }
 
 nav li{
@@ -41,10 +43,12 @@ a:hover{
 .dowload a{
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 .dowload  input{
     color: white;
+    text-decoration: none;
     background-color: #00DDB3;
     border-radius: 10px;
     border: 0;
@@ -83,6 +87,25 @@ p{
     padding: 0;
 }
 
+.video{
+    background-color: #d7dcdf;
+    display: flex;
+    width: 460px;
+    height: 300px;
+    margin: 0 0 0 0;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+iframe{
+    display: block;
+    width: 400px;
+    height: 250px;
+    margin: auto;
+    border-radius: 10px;
+}
+
 .dowload2 input{
     color: white;
     background-color: #00DDB3;
@@ -101,14 +124,22 @@ main h1{
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.233);
 }
 
+hr{
+    margin: 70px 0 0 0;
+}
 /*------footer-----*/
 footer{
     display: flex;
     gap: 10px;
-    margin-top: 20px;
+}
+
+footer div{
+    display: block;
+    margin: 18px 0 0 10px;
 }
 
 footer li {
+    margin-bottom: 20px;
     list-style-type: none;
 }
 
